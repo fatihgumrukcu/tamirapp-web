@@ -2,6 +2,7 @@
   --primary: #ef780f;
   --gray: #eeeeee;
   --text-dark: #222;
+  --white: #fff;
 }
 
 * {
@@ -19,17 +20,20 @@ body {
   min-height: 100vh;
 }
 
-/* Header */
+/* Header (Topbar) */
 .topbar {
   background-color: var(--primary);
   padding: 20px 0;
-  color: white;
+  color: var(--white);
 }
 
 .nav-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  width: 90%;
+  max-width: 1100px;
+  margin: 0 auto;
 }
 
 .logo {
@@ -44,7 +48,7 @@ body {
 }
 
 .nav-links a {
-  color: white;
+  color: var(--white);
   text-decoration: none;
   font-weight: bold;
 }
@@ -57,29 +61,26 @@ body {
 /* Main Content */
 .main-content {
   flex: 1;
+  background-color: var(--white);
   padding: 40px 20px;
-  background-color: white;
 }
 
 .content-box {
-  max-width: 800px;
+  max-width: 900px;
   margin: 0 auto;
   text-align: center;
 }
 
+.content-box h2 {
+  margin-bottom: 20px;
+}
+
 /* Footer */
 .footer {
-  background-color: #eeeeee;
+  background-color: var(--gray);
   text-align: center;
   padding: 15px 0;
   font-size: 14px;
   color: #444;
   margin-top: auto;
-}
-
-/* Container */
-.container {
-  width: 90%;
-  max-width: 1100px;
-  margin: 0 auto;
 }
