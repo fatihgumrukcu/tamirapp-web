@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="tr">
 <head>
@@ -8,25 +7,32 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <header>
-    <h1>Tamirapp</h1>
-    <nav>
-      <ul>
-        <li><a href="index.html">Ana Sayfa</a></li>
-        <li><a href="about.html">Hakkımızda</a></li>
-        <li><a href="support.html">Destek</a></li>
-      </ul>
-    </nav>
+  <header class="navbar">
+    <div class="container">
+      <h1 class="logo">Tamirapp</h1>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="index.html">Ana Sayfa</a></li>
+          <li><a href="about.html">Hakkımızda</a></li>
+          <li><a href="support.html" class="active">Destek</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
 
-  <main>
-    <h2>Destek</h2>
-    <p>Her türlü soru, öneri veya teknik destek için bizimle iletişime geçebilirsiniz.</p>
-    <p><strong>E-posta:</strong> destek@tamirapp.com</p>
+  <main class="hero">
+    <div class="container">
+      <h2>Destek</h2>
+      <p>Her türlü soru, öneri veya teknik destek talepleriniz için bize ulaşabilirsiniz.</p>
+      <p><strong>E-posta:</strong> destek@tamirapp.com</p>
+      <p><strong>Telefon:</strong> +90 212 000 00 00</p>
+    </div>
   </main>
 
   <footer>
-    <p>&copy; 2025 Tamirapp. Tüm hakları saklıdır.</p>
+    <div class="container">
+      <p>&copy; 2025 Tamirapp. Tüm hakları saklıdır.</p>
+    </div>
   </footer>
 
   <script src="script.js"></script>
